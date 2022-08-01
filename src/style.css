@@ -1,3 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("./imagen-palcipas.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #content {
-    color: red;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    color: blue;
+    font-size: 5rem;
 }

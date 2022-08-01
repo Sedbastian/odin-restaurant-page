@@ -1,5 +1,6 @@
 import './style.css';
-import iniciar from "./ini-module";
+import iniciar from "./inimodule.js";
+
 
 console.log("working");
 iniciar();
