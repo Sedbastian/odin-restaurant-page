@@ -4,10 +4,9 @@ module.exports = {
     mode: 'production',
     entry: {
         index: './src/index.js',
-        inimodule: "./src/inimodule.js"
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
