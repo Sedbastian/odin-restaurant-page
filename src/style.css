@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inspiration';
+    src: url('./Inspiration-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Branda';
+    src: url('./Branda-yolq.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tangerine';
+    src: url('./Tangerine-Bold.ttf') format('truetype');
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -11,6 +41,32 @@ body {
 }
 
 #content h1 {
-    color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background-color: rgba(0,0,0,.4);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+#content .res {
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: rgb(62, 0, 124);
+    text-shadow: rgb(255, 94, 0) 0 0 5px;
     font-size: 3rem;
+}
+
+#content .sal {
+    font-family: "Branda";
+    color: rgb(62, 0, 124);
+    text-shadow: rgb(255, 94, 0) 0 0 5px;
+    font-size: 3rem;
+}
+
+#content .ven {
+    font-family: "Inspiration";
+    color: rgb(62, 0, 124);
+    text-shadow: rgb(255, 94, 0) 0 0 5px;
+    font-size: 4rem;
 }

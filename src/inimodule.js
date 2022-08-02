@@ -1,7 +1,7 @@
 function iniciar () {
     const content = document.querySelector("#content");
     const heading = document.createElement("h1");
-    heading.textContent = "Restaurant Salvaje La Venancia";
+    heading.innerHTML = '<div class="res">Restaurant</div><div class="sal">Salvaje</div><div class="ven">“La Venancia”</div>';
     content.appendChild(heading);
 };
 
