@@ -31,7 +31,6 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 95vh;
     background-image: url("./imagen-palcipas.jpg");
     background-size: cover;
@@ -45,8 +44,13 @@ body {
     justify-content: center;
     gap: 3rem;
     background-color: rgba(0,0,0,.4);
+    margin: 0;
     padding: 1rem;
     border-radius: 2rem;
+}
+
+#content .izquierda {
+    text-align: center;
 }
 
 #content .res {
@@ -65,8 +69,9 @@ body {
 }
 
 #content .ven {
+    align-self: center;
     font-family: "Inspiration";
     color: rgb(62, 0, 124);
     text-shadow: rgb(255, 94, 0) 0 0 5px;
-    font-size: 4rem;
+    font-size: 6rem;
 }
