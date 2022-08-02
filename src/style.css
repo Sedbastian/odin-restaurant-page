@@ -41,15 +41,16 @@ body {
 
 #content h1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 3rem;
     background-color: rgba(0,0,0,.4);
     margin: 0;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 3rem;
 }
 
 #content .izquierda {
+    align-self: center;
     text-align: center;
 }
 
@@ -74,4 +75,10 @@ body {
     color: rgb(62, 0, 124);
     text-shadow: rgb(255, 94, 0) 0 0 5px;
     font-size: 6rem;
+}
+
+#content p {
+    font-family: Raleway;
+    font-size: 2rem;
+    color: rgb(134, 36, 0);
 }
