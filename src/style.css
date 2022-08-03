@@ -61,6 +61,9 @@ body {
     margin: 1rem;
     border-radius: 3rem;
     background-color: rgba(0,0,0,.4);
+    font-family: "Tangerine";
+    font-size: 3rem;
+    color: rgb(64, 0, 128);
 }
 
 #content nav div {
@@ -68,7 +71,7 @@ body {
 }
 
 #content nav .elegida {
-    background-color: rgba(128, 48, 0, 0.4);
+    background-color: rgba(179, 68, 0, 0.521);
 }
 
 #content .izquierda {
@@ -79,14 +82,14 @@ body {
 #content .res {
     font-family: "Montserrat";
     font-weight: 600;
-    color: rgb(62, 0, 124);
+    color: rgb(64, 0, 128);
     text-shadow: rgb(255, 94, 0) 0 0 5px;
     font-size: 3rem;
 }
 
 #content .sal {
     font-family: "Branda";
-    color: rgb(62, 0, 124);
+    color: rgb(64, 0, 128);
     text-shadow: rgb(255, 94, 0) 0 0 5px;
     font-size: 3rem;
 }
@@ -105,7 +108,7 @@ body {
     font-family: "Raleway";
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(214, 57, 0);
+    color: rgb(138, 37, 0);
 }
 
 #content .tarjeta {
@@ -117,4 +120,19 @@ body {
 
 #content .contacto img {
     width: 10rem;
+}
+
+#content .tarjeta h2 {
+    background-color: rgba(64, 0, 128, 0.65);
+    border-radius: 3rem;
+    text-shadow: rgb(134, 49, 0) 0 0 5px;
+}
+
+#content .tarjeta img {
+    width: 20rem;
+    margin: 3rem;
+    border-style: double;
+    border-color: rgb(64, 0, 128);
+    border-width: .4rem;
+    border-radius: 3rem;
 }

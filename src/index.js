@@ -5,8 +5,10 @@ import contactoPestania from "./contactoPestania.js";
 
 function eliminarClaseElegida () {
     const pestaniaElegida = document.querySelector(".elegida");
-    pestaniaElegida.classList.remove("elegida");
-}
+    if (pestaniaElegida) {
+        pestaniaElegida.classList.remove("elegida");
+    };
+};
 
 function borrarContenido() {
     const contenido = document.querySelector(".contenido");
@@ -49,7 +51,7 @@ const pestanias = document.createElement("nav");
 pestanias.classList.add("pestanias");
     
 const descripcion = document.createElement("div");
-descripcion.classList.add("descripcion", "elegida");
+descripcion.classList.add("descripcion");
 descripcion.textContent = "Descripcion";
 descripcion.addEventListener("click", descripcionElegir);
 
