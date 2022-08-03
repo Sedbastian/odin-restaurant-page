@@ -1,7 +1,12 @@
 import './style.css';
-import inicioPestania from "./inicioPestania.js";
+import descripcionPestania from "./descripcionPestania.js";
 import menuPestania from "./menuPestania.js";
 import contactoPestania from "./contactoPestania.js";
+
+function eliminarClaseElegida () {
+    const pestaniaElegida = document.querySelector(".elegida");
+    pestaniaElegida.classList.remove("elegida");
+}
 
 function borrarContenido() {
     const contenido = document.querySelector(".contenido");
@@ -10,17 +15,26 @@ function borrarContenido() {
     };
 };
 
-function inicioElegir() {
+function descripcionElegir() {
+    eliminarClaseElegida();
+    const pestaniaAelegir = document.querySelector(".descripcion");
+    pestaniaAelegir.classList.add("elegida");
     borrarContenido();
-    inicioPestania();
+    descripcionPestania();
 };
 
 function menuElegir() {
+    eliminarClaseElegida();
+    const pestaniaAelegir = document.querySelector(".menu");
+    pestaniaAelegir.classList.add("elegida");
     borrarContenido();
     menuPestania();
 };
 
 function contactoElegir() {
+    eliminarClaseElegida();
+    const pestaniaAelegir = document.querySelector(".contacto");
+    pestaniaAelegir.classList.add("elegida");
     borrarContenido();
     contactoPestania();
 };
@@ -34,10 +48,10 @@ content.appendChild(heading);
 const pestanias = document.createElement("nav");
 pestanias.classList.add("pestanias");
     
-const inicio = document.createElement("div");
-inicio.classList.add("inicio", "elegido");
-inicio.textContent = "Inicio";
-inicio.addEventListener("click", inicioElegir);
+const descripcion = document.createElement("div");
+descripcion.classList.add("descripcion", "elegida");
+descripcion.textContent = "Descripcion";
+descripcion.addEventListener("click", descripcionElegir);
 
 const menu = document.createElement("div");
 menu.classList.add("menu");
@@ -49,7 +63,7 @@ contacto.classList.add("contacto");
 contacto.textContent = "Contacto";
 contacto.addEventListener("click", contactoElegir);
 
-pestanias.appendChild(inicio);
+pestanias.appendChild(descripcion);
 pestanias.appendChild(menu);
 pestanias.appendChild(contacto);
 content.appendChild(pestanias);

@@ -67,7 +67,7 @@ body {
     padding: 1rem 3rem;
 }
 
-#content nav .elegido {
+#content nav .elegida {
     background-color: rgba(128, 48, 0, 0.4);
 }
 
@@ -100,7 +100,21 @@ body {
 }
 
 #content .contenido {
-    font-family: Raleway;
+    padding: 3rem;
+    text-align: center;
+    font-family: "Raleway";
     font-size: 2rem;
-    color: rgb(134, 36, 0);
+    font-weight: 600;
+    color: rgb(214, 57, 0);
+}
+
+#content .tarjeta {
+    margin: 3rem;
+    padding: 1rem;
+    background-color: rgba(50,50,50,.4);
+    border-radius: 3rem;
+}
+
+#content .contacto img {
+    width: 10rem;
 }
